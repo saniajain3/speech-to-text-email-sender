@@ -24,9 +24,9 @@ def send_mail(receiver, subject, body):
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login("saniajain2022@vitbhopal.ac.in","2022025665")
+        server.login("readright2022@gmail.com ","dxghikiuidbtgzws") #readright2022@gmail.com to be replaced by sender's mail
         email = EmailMessage()
-        email["from"] = "saniajain2022@vitbhopal.ac.in"
+        email["from"] = "readright2022@gmail.com"
         email["to"] = receiver
         email["subject"] = subject
         email.set_content(body)
@@ -39,7 +39,7 @@ def send_mail(receiver, subject, body):
         talking_tom("An error occurred while sending the email") #allow access for less secure apps for email login
 
 def main_poc():
-    contact_dict = {"test": "jainsania3@gmail.com"}  # Replace with your contact dictionary
+    contact_dict = {"test": "your_email@gmail.com"}  # Replace with your contact dictionary
     talking_tom("Whom do you want to send this email?")
     name = mic()
     receiver = contact_dict.get(name)
