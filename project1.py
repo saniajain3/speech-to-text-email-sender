@@ -3,9 +3,6 @@ import pyaudio
 import speech_recognition  as sr
 from email.message import EmailMessage
 import pyttsx3
-#import distutils
-
-
 
 
 listener = sr.Recognizer()
@@ -24,12 +21,12 @@ def mic():
         print(data)
         return data.lower()
 
-dict = {"test":"jainsania3@gmail.com"}
+dict = {"test":"#sender's mail"}
 
 def send_mail(receiver , subject , body):
     server = smtplib.SMTP("smtp.gmail.com",587)
     server.starttls()
-    server.login("readright2022@gmail.com","dxghikiuidbtgzws")
+    server.login("readright2022@gmail.com ","dxghikiuidbtgzws") #readright2022@gmail.com to be replaced by reciever's mail
     email = EmailMessage()
     email["from"] = "readright2022@gmail.com"
     email["to"]= receiver
