@@ -42,6 +42,8 @@ Talk
 Email body: "Hi John, here's the agenda for our meeting tomorrow..."
 Email sent successfully
 
+## ERRORS
+turn on accessm for less secure apps of your google account login
 
 ## Limitations
 
