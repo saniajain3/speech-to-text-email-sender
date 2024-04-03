@@ -29,6 +29,8 @@ This Python script enables users to send emails using voice commands. It utilize
 
 4. Run the script and follow the voice prompts to send an email.
 
+5. When the voice prompt says "Whom do you want to send the email to" say "test".
+
 ## Example
 
 $ python email_sender.py
