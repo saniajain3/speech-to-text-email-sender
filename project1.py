@@ -21,12 +21,12 @@ def mic():
         print(data)
         return data.lower()
 
-dict = {"test":"#sender's mail"}
+dict = {"test":"#reciever's mail"}
 
 def send_mail(receiver , subject , body):
     server = smtplib.SMTP("smtp.gmail.com",587)
     server.starttls()
-    server.login("readright2022@gmail.com ","dxghikiuidbtgzws") #readright2022@gmail.com to be replaced by reciever's mail
+    server.login("readright2022@gmail.com ","dxghikiuidbtgzws") #readright2022@gmail.com to be replaced by sender's mail
     email = EmailMessage()
     email["from"] = "readright2022@gmail.com"
     email["to"]= receiver
